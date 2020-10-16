@@ -6,16 +6,18 @@ REPL.itというホスティングサービス上にgolangとstripe(決済サー
 
 WalletFacade
   Account: 
-    ユーザ様の情報
+    ユーザ様の情報格納パッケージになります。
   Wallet: 
-    残高
-  Items:  
-    購入商品(Done: 決済済み=True), SumValueはユーザ様の決済履歴の合計金額になります。
+    残高を格納しているパッケージになります。
+  Items:
+    購入商品情報の格納パッケージになります。
+    List(購入した商品リスト(Done: 決済済みかどうか=bool)), 
+    SumValue(ユーザ様の決済履歴の合計金額になります。)、
     また、パッケージ内にて掲載商品を.envファイルから読み込み、ItemListという変数に格納しています。
-  Item: 
-    商品情報
-  ID: 
-    ユーザ様のstripe_ID
+  Item: class
+    商品情報格納パッケージになります。
+  ID:
+    ユーザ様のstripe_IDを格納する変数になります。
 
 https://facadestripe.hitabacokyou.repl.co/register/:name/:password ユーザ様の登録
 https://facadestripe.hitabacokyou.repl.co/charge  決済
