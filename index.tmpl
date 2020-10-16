@@ -1,0 +1,20 @@
+<h1>ようこそ {{.User.Account.Name}} さん</h1>
+<img src="/static/sample.jpg" width="193" height="130">
+
+<form action="/charge" method="post">
+    <b>メニュー</b>
+    {{$n := 0}}
+    {{range $i, $v := .itemList}}
+        {{range $ii, $vv := $v}}
+            <input type="checkbox" name="food" value={{$i}}>{{$ii}}
+        {{end}}
+    {{end}}
+    <script
+        src="https://checkout.stripe.com/checkout.js" 
+        class="stripe-button"
+        data-key={{.pub}}
+        data-description="Stripe-Demo Payment"
+        data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+        data-locale="auto">
+    </script>
+</form>

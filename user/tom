@@ -1,0 +1,20 @@
+{
+ "Account": {
+  "Name": "tom",
+  "Password": "111"
+ },
+ "Wallet": {
+  "Balance": 2000
+ },
+ "Items": {
+  "List": [
+   {
+    "Name": "焼き肉",
+    "Price": 1000,
+    "Del": true
+   }
+  ],
+  "SumValue": 1000
+ },
+ "ID": "cus_ICkr1iAgigVYWt"
+}
