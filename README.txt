@@ -14,7 +14,7 @@ WalletFacade
     List(購入した商品リスト(Done: 決済済みかどうか=bool)), 
     SumValue(ユーザ様の決済履歴の合計金額になります。)、
     また、パッケージ内にて掲載商品を.envファイルから読み込み、ItemListという変数に格納しています。
-  Item: class
+  Item:
     商品情報格納パッケージになります。
   ID:
     ユーザ様のstripe_IDを格納する変数になります。
