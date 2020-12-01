@@ -19,8 +19,8 @@ WalletFacade
   ID:
     ユーザ様のstripe_IDを格納する変数になります。
 
-https://facadestripe.hitabacokyou.repl.co/register/:name/:password ユーザ様の登録
-https://facadestripe.hitabacokyou.repl.co/charge  決済
-https://facadestripe.hitabacokyou.repl.co/login/:name/:password ログイン
-https://facadestripe.hitabacokyou.repl.co/logout ログアウト
-https://facadestripe.hitabacokyou.repl.co/deposit/:name/:password/:amount 入金
+https://stripe.hitabacokyou.repl.co/register/:name/:password ユーザ様の登録
+https://stripe.hitabacokyou.repl.co/charge  決済
+https://stripe.hitabacokyou.repl.co/login/:name/:password ログイン
+https://stripe.hitabacokyou.repl.co/logout ログアウト
+https://stripe.hitabacokyou.repl.co/deposit/:name/:password/:amount 入金
